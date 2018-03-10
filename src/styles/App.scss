@@ -1,0 +1,62 @@
+h2 {
+  margin: 0
+}
+body,html{
+  width: 100%;
+  height: 100%;
+  background-color: #222;
+}
+
+.container{
+  width: 100%;
+  height: 100%; 
+}
+
+/* stage start */
+.stage{
+  position: relative; //图片依容器定位
+  width: 100%;
+  height: 698px;
+
+  background-color: #ddd;
+  overflow: hidden;
+
+  @at-root{
+    .img-figure {
+      box-sizing: border-box;
+      position: absolute;
+      width: 260px;
+      height: 280px;
+
+      padding: 40px;
+      margin: 0;
+
+      background-color: #fff;
+      cursor: pointer;
+    }
+
+    .img-figure img{
+      width: 100%;
+      height: auto;
+    }
+
+    .img-figure figcaption {
+      margin-top: 20px;
+      font-size: 15px;
+      text-align: center;
+      color: #9a9a9a;
+    }
+  }
+}
+/* stage end*/
+
+/* navigator start */
+.navigator{
+  width: 100%;
+  height: 30px;
+  position: fixed;
+  left: 0;
+  bottom: 30px;
+  z-index: 101;
+}
+/* navigator end */
